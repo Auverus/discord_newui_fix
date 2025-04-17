@@ -53,10 +53,15 @@
     }
 }
 .visual-refresh .panels_c48ade {
-	right: var(--space-xs) !important;
-	left: auto;
-	bottom: var(--space-xs);
-    width: calc(100% - var(--space-xs) * 2 - var(--custom-guild-list-width));
+/*	right: calc(var(--space-xs)*1.9) !important; */
+  right: 0;
+  left: auto;
+/*	left: auto; */
+/*  bottom: var(--space-xs);*/
+  bottom: 0;
+    width: calc(100% - var(--space-xs) * 0.2 - var(--custom-guild-list-width));
+    border-radius: 1;
+    border: 0;
 }
 
 
@@ -71,13 +76,48 @@
 
 /* Chat input bar */
 .channelTextArea_f75fb0   {
-	margin-bottom: var(--space-xs);
+  /* margin-bottom: var(--space-xs);*/
+  margin-bottom: 0;
 	.inner__74017 {
 		--custom-channel-textarea-text-area-max-height: 56px;
 		--custom-channel-textarea-text-area-height: var(
 			--custom-channel-textarea-text-area-max-height
 		);
 	}
+}
+.visual-refresh .base_b88801{
+ bottom: 48px;
+ font-size:12px;
+/* background-color: var(--activity-card-background);
+   border-style: solid;
+ border-radius: 1;
+  border: 1;*/
+
+}
+.base_b88801 .typingDots_b88801{
+ background-color: var(--activity-card-background);
+  border-style: solid;
+ border-radius: 5px;
+  border: 5px;
+  padding: 2px;
+  margin-left: -8px;
+}
+
+.visual-refresh .base_b88801 .ellipsis_b88801{
+  margin-left: 13px
+}
+.base_b88801 .text_b88801{
+  margin-right: 10px
+}
+
+.visual-refresh .slateTextArea_ec4baf{
+  padding: calc((var(--custom-channel-textarea-text-area-height) - var(--chat-markup-line-height))/2) 0;
+}
+.visual-refresh .attachButton__0923f{
+  /* padding: 0;*/
+}
+.messagesWrapper_36d07{
+  border-bottom-width: 24*var()
 }
 
 /* bad fix for search bar */
@@ -86,5 +126,4 @@
 	min-width: 175px !important;
 
 }
-
 @import url('https://mairiosipla.github.io/unshittify-discord/RoundIconsSource.theme.css');
